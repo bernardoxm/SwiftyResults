@@ -8,7 +8,7 @@ $subject = "Contact Form";
 $mailheader = "From: $email \r\n";
 
 try {
-    mail("icpedrosa@swiftyresults.com", $subject, $formcontent, $mailheader);
+    mail("icpedrosa@swiftyresults.com ; bernardo.melo@swiftyresults.com", $subject, $formcontent, $mailheader);
     header('HTTP/1.1 200 OK');
 } catch (Exception $ex) {
 	// jump to this part
